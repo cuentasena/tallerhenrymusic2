@@ -156,68 +156,68 @@ body {
   padding: 15px;
 }
 
-/* Media Queries */
-@media (min-width: 480px) {
-  .textenca h1 {
-    font-size: 40px;
-  }
-  .textenca p {
-    font-size: 16px;
-  }
-  .btn-naranja {
-    padding: 10px 20px;
-  }
-  .dance-tour h2,
-  .precimusica h2 {
-    font-size: 28px;
-  }
+/* Media Query 352-480px - Smartphones chiquitos */
+@media (min-width: 352px) and (max-width: 480px) {
   .cajtour,
   .cajprecios {
-    gap: 20px;
+    flex-wrap: wrap;
+  }
+  .cajtour-item,
+  .cajprecio-item {
+    flex: 1 1 100%;
+    max-width: 100%;
   }
 }
 
-@media (min-width: 768px) {
-  .textenca h1 {
-    font-size: 45px;
-  }
-  .textenca p {
-    font-size: 17px;
-  }
-  .btn-naranja {
-    padding: 11px 22px;
-  }
-  .dance-tour h2,
-  .precimusica h2 {
-    font-size: 30px;
-  }
-  .cajtour {
-    gap: 23px;
-  }
+/*  Media Query 481-768px - Tablets y smartphones grandes  */
+@media (min-width: 481px) and (max-width: 768px) {
+  .cajtour,
   .cajprecios {
-    gap: 23px;
+    flex-wrap: wrap;
+  }
+  .cajtour-item,
+  .cajprecio-item {
+    flex: 1 1 45%;
+    max-width: 45%;
   }
 }
 
+/* Media Query 769-920px - Laptops y tablets horizontales */
+@media (min-width: 769px) and (max-width: 920px) {
+  .cajtour,
+  .cajprecios {
+    flex-wrap: wrap;
+  }
+  .cajtour-item,
+  .cajprecio-item {
+    flex: 1 1 30%;
+    max-width: 30%;
+  }
+}
+
+/* Media Query 921-1279px - Laptops grandes y desktops pequeños */
+@media (min-width: 921px) and (max-width: 1279px) {
+  .cajtour,
+  .cajprecios {
+    flex-wrap: wrap;
+  }
+  .cajtour-item,
+  .cajprecio-item {
+    flex: 1 1 23%;
+    max-width: 23%;
+  }
+}
+
+/* Media Query 1280px+ - Escritorios grandes */
 @media (min-width: 1280px) {
-  .textenca h1 {
-    font-size: 50px;
-  }
-  .textenca p {
-    font-size: 18px;
-  }
-  .btn-naranja {
-    padding: 12px 25px;
-  }
-  .dance-tour h2,
-  .precimusica h2 {
-    font-size: 32px;
-  }
-  .cajtour {
-    gap: 25px;
-  }
+  .cajtour,
   .cajprecios {
-    gap: 25px;
+    flex-wrap: nowrap;
+  }
+  .cajtour-item,
+  .cajprecio-item {
+    flex: 0 0 250px;
+    max-width: 250px;
   }
 }
 
